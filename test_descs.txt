@@ -1,0 +1,24 @@
+least common locations:  [('Pacific', 1), ('Asadi', 1), ('Jupiter', 1), ('Mediterranean', 1), ('Atlantic', 1)]
+least common events:  [('the Dark Ages, Halvorsen', 1), ('the Hugo Awards', 1), ('the American Revolution', 1), ('the World of Tomorrow', 1), ('Hugo', 2)]
+Earth, every night
+
+Earth fell during the the American Revolution, a intent the Hugo Awards.
+Earth fell during the the American Revolution, a old the Dark Ages, Halvorsen.
+Earth fell during the the American Revolution, a bright the Dark Ages, Halvorsen.
+
+Jupiter, a few moments
+
+Mediterranean fell during the the American Revolution, a bottom the Hugo Awards.
+Mediterranean was famous for the American Revolution thought a great many accidents.
+The American Revolution held attractive the message.
+Mediterranean fell during the the American Revolution, a previous the American Revolution.
+The American Revolution made ectoplasmic the message.
+
+Earth, dusk
+
+The whooping cough became much, at the Earth.
+The American Revolution emerged unique the whooping cough.
+Regina was famous for the American Revolution appeared me.
+The American Revolution intersected little the whooping cough.
+
+{'name': 'Rhadampsicus', 'desc': 'Rhadampsicus, night\n\nViolence became unruly, at the slaughter. Hazan murdered misfits.', 'type': 'klingon', 'objects': ['mechanical', 'mechanicalmechanical', 'mechanical']}
