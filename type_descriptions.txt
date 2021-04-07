@@ -1,0 +1,6 @@
+Sagan: Hopeful, peaceful, spacefaring.
+Klingon: Warlike, industrial, invasive.
+Tree: Contemplative, peaceful, organic.
+Borg: Mechanical, computerized, invasive.
+Ford: Industrial, inventive, mechanical.
+Farmtotable: Agrarian, pastoral, simple.

@@ -78,7 +78,7 @@ rules = {
     "loc": [w for w in locations],
     "time": [w for w in times],
     "event": [w for w in events],
-    "origin": "#scene#\n\n[charA:#loc#][charB:#event#][prop:#object#]#sentences#",
+    "origin": "#scene#\n\n[charA:#loc#][charB:#object#][prop:#adjective#]#sentences#",
     "scene": "#loc#, #time.lowercase#",
     "sentences": [
         "#sentence#\n#sentence#",
@@ -86,21 +86,16 @@ rules = {
         "#sentence#\n#sentence#\n#sentence#\n#sentence#"
     ],
     "sentence": [
-        "#charA.capitalize# #verb# #adj#.",
-        "#charB.capitalize# #verb# #adj# #prop#.",
-        "#prop.capitalize# became #adj#, at the #loc#.",
-        "#charA.capitalize# was known to be #culture_adj#, before #event#.",
-        "#charA.capitalize# was famous for #charB# #verb# #object#.",
-        "#charA.capitalize# fell during the #charB#, a #adj# #event#.",
-        "#sentence#\n#sentence#"
+        "#charB.capitalize# is known to #verb# on #charA#.",
+        "The #charB.capitalize# is #adj# and #adj#, and #verb#s.",
     ]
 }
 grammar = tracery.Grammar(rules)
 grammar.add_modifiers(base_english)
 
+object_descs = []
 for i in range(3):
-    print(grammar.flatten("#origin#"))
-    print()
+    object_descs.append(grammar.flatten("#origin#"))
 
 #curated grammar
 with open('planet_type_grammars.json', 'r') as planet_json:
@@ -154,7 +149,7 @@ with open('planet_type_grammars.json', 'r') as planet_json:
                 obj_type += planet['obj_categories'][random.randint(0, 2)]
         else:
                 obj_type += planet['obj_categories'][random.randint(0, 1)]
-        objects.append(obj_type)
+        objects.append({'type': obj_type, 'desc': object_descs[planet['obj_categories'].index(i)]})
     event_chance  = random.random()
     planet_gen = {'name': name, 'desc': desc, 'type': type, 'objects': objects}
     if event_chance > 0.9:
